@@ -1,0 +1,57 @@
+.heroBanner {
+    background-image: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    padding: 128px 24px;
+}
+.heroBannerConatainer{
+    width: 576px;
+   
+}
+.heroBannerText1{
+    font-size: 48px;
+    font-weight: 800;
+    color: black;
+    text-align: center;
+}
+.heroBannerText2{
+    color: rgb(190, 18, 60);
+    font-size: 48px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.heroBannerText3 {
+    text-align: center;
+    color: black;
+    font-size:20px ;
+    font-weight: 500;
+    margin-top: 16px;
+}
+.heroButtonsContainer {
+    margin-top: 32px;
+   display: flex; 
+   gap:10px;
+}
+
+.heroBannerbutton1 {
+    background-color:rgb(225, 29, 72) ;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 48px;
+    border-radius: 4px;
+
+}
+.heroBannerbutton2 {
+    background-color:rgb(255, 255, 255) ;
+    color: rgb(225, 29, 72);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 48px;
+    border-radius: 4px;
+
+}

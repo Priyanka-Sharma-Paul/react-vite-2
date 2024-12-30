@@ -1,0 +1,41 @@
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 64px;
+    background-color: rgb(229, 231, 235);
+
+
+}
+.footerImgContainer{
+    width: 150px;
+    color: rgb(13, 148, 136);
+    
+
+}
+.footerTextContainer{
+    color: rgba(55, 65, 81, 0.75);
+
+}
+.footerLinkContainer{
+    display: flex;
+    gap :20px;
+
+
+}
+.footerLinkContainer a {
+    
+    font-weight: 400;
+    color: rgb(48, 50, 52);
+}
+
+.footerIconContainer {
+    display: flex;
+    gap :20px;
+}
+
+.footerIconContainer a {
+    color: black;
+    font-size: 24px;
+}

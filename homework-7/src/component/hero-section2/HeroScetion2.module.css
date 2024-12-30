@@ -1,0 +1,55 @@
+.HeroScetion2Container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding: 64px 32px;
+    position: relative;
+}
+
+.HeroScetion2ImgContainer {
+    padding: 64px 0px;
+}
+
+.HeroScetion2Background {
+    position: absolute;
+    background: aliceblue;
+    height: calc(100% - 128px);
+    width: 50%;
+    right: 64px;
+    top: 64px;
+    z-index: -1;
+}
+
+.HeroScetion2TextContainer {
+    padding: 96px;
+
+}
+
+
+.HeroScetion2Text1 {
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+
+.HeroScetion2Text2 {
+
+    color: rgb(75, 85, 99);
+    margin-top: 16px;
+
+
+}
+
+
+
+
+.HeroScetion2button {
+    background-color: rgb(79, 70, 229);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    padding: 12px 48px;
+    border-radius: 4px;
+    margin-top: 32px;
+
+}

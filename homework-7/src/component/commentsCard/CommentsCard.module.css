@@ -1,0 +1,37 @@
+.CommentsContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.commentCard{
+    padding: 24px;
+
+}
+.comment{
+    background-color: rgb(244, 246, 248);
+    border-radius: 12px;
+    padding: 24px;
+}
+.commentProfileContainer{
+    margin-top: 16px;
+    display: flex;
+    gap: 10px;
+
+}
+.commentProfileImg{
+    width:48px;
+    height: 48px;
+    border-radius:50%;
+}
+.commentProfileText{
+    display: flex;
+    flex-direction: column;
+}
+.commentProfileName{
+    font-size: 14px; 
+    font-weight: 500;
+    color: black;
+
+}
+.commentProfilePosition{
+    font-size: 14px; 
+}

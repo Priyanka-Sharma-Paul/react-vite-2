@@ -1,0 +1,44 @@
+ .navContainer {
+     width: 100%;
+     height: 68px;
+     padding: 16px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     position: sticky;
+     top: 0;
+     background: white;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+     z-index: 99999;
+ }
+
+ .navLinkContainer {
+
+     display: flex;
+     justify-content: space-between;
+     gap: 32px;
+     color: black;
+
+ }
+ .navButton {
+   background-color: rgb(29, 78 ,216); 
+   color: white;
+   font-weight: 500;
+   font-size: 14px;
+ }
+
+ .navLinkContainer a {
+    color: black;
+ }
+ .navLinkContainer a:hover ,a.active {
+    color: rgb(29 ,78, 216) ;
+ }
+ .navLogo {
+    display: flex;
+    gap :15px;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+ }
+
