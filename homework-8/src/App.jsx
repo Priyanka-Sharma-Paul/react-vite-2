@@ -1,35 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import ProgressBar from "./components/ProgressBar";
+import "./App.css";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [value, setValue] = useState(0);
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setValue((val) => val + 0.1);
+    }, 20);
+
+    if (success) {
+      clearInterval(interval);
+    }
+
+    return () => clearInterval(interval);
+
+  }, [success]);
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="app">
+      <span className="title">Progress Bar</span>
+      <ProgressBar value={value} onComplete={() => setSuccess(true)} />
+      <span className="status">
+        {success ? "Complete!" : "Loading..."}
+      </span>
+    </div>
+  );
 }
-
-export default App
